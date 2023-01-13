@@ -33,9 +33,9 @@
   </div>
 </div>
 
-{{  info.value  }}
+
 <HomeSection5
-  :notices="notices.value"
+  :notices="notices"
 />
 
   <!-- Section end -->
@@ -52,28 +52,23 @@ import dayjs from 'dayjs'
 import { reactive, onMounted, ref } from 'vue'
 import { ShareIcon, HomeIcon, UserIcon, DocumentTextIcon, VideoCameraIcon } from '@heroicons/vue/outline'
 import axios from 'axios'
-const notices = ([])
-const columns = ([])
-const news = ([])
-const books = ([])
-const docs = ([])
-const topslides = ([])
-const text = ref('')
-const infos = ([]);
-const info = ([]);
-const url = ref('');
+const notices = ref([])
+const topslides = ref([])
 
 
 //소식 data
-const responses = await axios.get(`http://localhost:8000/api/notice-hlist`);
-infos.value = responses.data.notices
+const responses = await axios.get(`https://api.gongzime.com/api/notice-hlist`);
+notices.value = responses.data.notices;
 topslides.value = responses.data.topslides
 
+
 const nNum = (i) => {
-  infos.value = []
-  info.value = responses.data.notices.filter(item => item.category === i);
-  infos.value = info.value;
-  console.log('r', infos.value)
+  notices.value = []
+  if(typeof i === 'number') {
+  notices.value = responses.data.notices.filter(item => item.category === i);
+  }else {
+    notices.value = responses.data.notices;
+  }
 }
 
 const menuSelected = ref('')

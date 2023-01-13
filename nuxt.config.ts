@@ -8,7 +8,7 @@ export default defineNuxtConfig({
   ],
   runtimeConfig: {
     public: {
-      backendUrl: "http://localhost:8000",
+      backendUrl: "https://api.gongzime.com",
       frontendUrl: "http://localhost:3000",
     },
   },
