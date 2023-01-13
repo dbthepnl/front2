@@ -1,0 +1,127 @@
+{ 
+  "hmenus": [
+    {
+      "name": "선교회",
+      "submenu": [
+        {
+        "name": "소개",
+        "href": "/page/about"
+        },
+        {
+        "name": "조직도",
+        "href": "/page/organization"
+        },
+        {
+        "name": "로고",
+        "href": "/page/logo"
+        }
+      ],
+      "href": "#",
+      "icon": "ChartBarIcon"
+    },
+    {
+      "name": "장학회",
+      "submenu": [
+        {
+        "name": "소개",
+        "href": "/page/about2"
+        },
+        {
+        "name": "장학금 신청",
+        "href": "/page/register"
+        }
+      ],
+      "href": "#",
+      "icon": "CheckCircleIcon"
+    },
+    { "name": "엔젤리더스", "submenu": [
+        {
+        "name": "소개",
+        "href": "/page/about3"
+        }
+      ], 
+      "href": "#", 
+      "icon": "ShieldCheckIcon" 
+    },
+    {
+      "name": "커뮤니티",
+      "submenu": [
+        {
+        "name": "공지사항",
+        "href": "/notice"
+        },
+        {
+        "name": "게시판",
+        "href": "/ask"
+        },
+        {
+        "name": "FAQ",
+        "href": "/page/faq"
+        }
+      ],
+      "href": "#",
+      "icon": "CheckCircleIcon"
+    },
+      {
+      "name": "후원안내",
+      "submenu": [
+        {
+        "name": "후원하기",
+        "href": "/page/donation"
+        }
+      ],
+      "href": "#",
+      "icon": "CheckCircleIcon"
+    }
+  ],
+"fmenus": [
+  {
+    "name": "개인정보처리방침",
+    "href": "/post",
+    "icon": "CheckCircleIcon"
+  },
+  {
+    "name": "저작권정책",
+    "href": "/post",
+    "icon": "CheckCircleIcon"
+  },
+  {
+    "name": "사이트맵",
+    "href": "/post",
+    "icon": "CheckCircleIcon"
+  }
+],
+"mmenus": [
+  { "name": "엔젤리더스", "subs": [
+    { "name": "소개", "url": "/page/about3" }
+  ]},
+  { "name": "장학회", "subs": [
+    { "name": "소개", "url": "/page/about2" },
+    { "name": "장학금 신청", "url": "/page/register" }
+  ]},
+   { "name": "선교회", "subs": [
+    { "name": "소개", "url": "/page/about" },
+    { "name": "조직도", "url": "/page/organization" },
+    { "name": "로고", "url": "/page/logo" }
+  ]},
+  { "name": "커뮤니티", "subs": [
+    { "name": "공지사항", "url": "/notice" },
+    { "name": "게시판", "url": "/ask" },
+    { "name": "FAQ", "url": "/page/faq" }
+  ]},
+   { "name": "후원안내", "subs": [
+    { "name": "후원하기", "url": "/page/donation" }
+  ]},
+  { "name": "내 정보", "subs": [
+    { "name": "내 정보", "url": "/profile" },
+    { "name": "내 심사현황", "url": "/profile/process" },
+    { "name": "내 게시글", "url": "/profile/ask"}
+  ]},
+   { "name": "가입하기", "subs": [
+    { "name": "가입하기", "url": "/register" }
+  ]},
+    { "name": "장학금 신청", "subs": [
+    { "name": "장학금 신청", "url": "/register/membership" }
+  ]}
+]
+}
